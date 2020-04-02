@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TableTwoComponent } from './table-two.component';
+import { DynamicTableComponent } from './dynamic-table.component';
 
-describe('TableExampleComponent', () => {
-  let component: TableTwoComponent;
-  let fixture: ComponentFixture<TableTwoComponent>;
+describe('TestComponent', () => {
+  let component: DynamicTableComponent;
+  let fixture: ComponentFixture<DynamicTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableTwoComponent ]
+      declarations: [ DynamicTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableTwoComponent);
+    fixture = TestBed.createComponent(DynamicTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

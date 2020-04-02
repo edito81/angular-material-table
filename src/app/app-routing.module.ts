@@ -1,13 +1,12 @@
+import { SingleDataComponent } from './helpers/single-data/single-data.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AngularMaterialtableComponent } from './helpers/angular-material-table/angular-material-table.component';
 import { TableComponent } from './table/table.component';
-import { TableTwoComponent } from './table-two/table-two.component';
+import { DynamicTableComponent } from './helpers/dynamic-table/dynamic-table.component';
 
 const routes: Routes = [
-  {path:'table', component:AngularMaterialtableComponent},
-  {path:'table-1', component:TableComponent},
-  {path:'table-2', component:TableTwoComponent}
+  { path: 'table', component: TableComponent },
+  { path: 'single', component: SingleDataComponent, data: {} },
 ];
 
 @NgModule({

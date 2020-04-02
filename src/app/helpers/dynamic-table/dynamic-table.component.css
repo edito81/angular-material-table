@@ -1,0 +1,91 @@
+.alarm-dropdown {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  white-space: pre-wrap;
+}
+
+.alarm-dropdown /deep/.mat-select-arrow-wrapper {
+  visibility: hidden;
+}
+
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,
+.mat-radio-outer-circle {
+  border-color: cornflowerblue !important;
+
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: cornflowerblue !important;
+
+}
+
+.disableLink {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.fa {
+  color: green
+}
+
+th {
+  background-color: #447AFB;
+  font-size: 16px;
+  color: #ffff;
+}
+
+td {
+  font-size: 13px;
+}
+
+.font {
+  font-family: ralewaylight;
+}
+
+.custom-ripple {
+  color: blue
+}
+
+.hide {
+  display: none;
+}
+
+::ng-deep .actions .mat-form-field-underline {
+  display: none;
+}
+
+.blue-color {
+  background-color: lightblue;
+}
+
+.actions {
+  padding: 0;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -34px;
+  align-content: center;
+  display: flex;
+}
+
+.icon-size {
+  font-size: 16px;
+}
+
+.option-icon {
+  font-size: 24px;
+  color: #A3A3A3
+}
+
+.option-text {
+  font-size: 14px;
+  font-family: Raleway;
+  color: #4C4C4C
+}

@@ -1,3 +1,4 @@
+import { SingleDataComponent } from './helpers/single-data/single-data.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
@@ -5,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './table/table.component';
-import { AngularMaterialtableComponent } from './helpers/angular-material-table/angular-material-table.component';
 import {NgModule} from '@angular/core';
 import {A11yModule} from '@angular/cdk/a11y';
 
@@ -49,17 +49,22 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { TableTwoComponent } from './table-two/table-two.component';
+import { DynamicTableComponent } from './helpers/dynamic-table/dynamic-table.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { DialogBoxComponent } from './dialog-box/dialog-box.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    AngularMaterialtableComponent,
-    TableTwoComponent,
+    DynamicTableComponent,
+    DialogBoxComponent,
+    SingleDataComponent
 
   ],
   imports: [
+    AngularFontAwesomeModule,
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
@@ -111,6 +116,10 @@ import { TableTwoComponent } from './table-two/table-two.component';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
+  ],
+
+  entryComponents: [
+    DialogBoxComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

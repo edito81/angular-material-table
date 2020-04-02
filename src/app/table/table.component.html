@@ -1,1 +1,5 @@
-<app-angular-material-table [ELEMENT_DATA]="data" [COL]='col'></app-angular-material-table>
+<div *ngIf="allResults">
+  <app-dynamic-table [(receivedData)]="fakeData" [(columns)]="columns" tableTitle="All Products" [(metaCount)]="metaCount"
+    (pageEvent)="updatePagination($event)">
+  </app-dynamic-table>
+</div>
